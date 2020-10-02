@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dueto Park's Homepage-profile</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    <a href="main.html" class="settingTitle">
+      <h1>Dueto Park</h1></a>
+
+
+    <p style="font-size:50px; font-weight:bold;">
+      <a href="profile.html" class="settingMenu">Profile</a>
+      |
+      <a href="picture.html" class="settingMenu">Picture</a>
+    </p>
+
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="44.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img src="45.jpg" style="width:100%">
+      </div>
+
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <ul class="settingContents">
+      <li>이름: 박듀트</li>
+      <li>생일: 2145년 8월 19일 (사자자리)</li>
+      <li>취미: 수영, 독서, 글쓰기</li>
+      <li>발크기: 왼-230 오-235</li>
+      <li>좌우명: 단순하게 살자</li>
+      <li>자격증: 전산세무2급, 전산회계1급, 컴활2급, 운전면허2종보통</li>
+      <li>좋아하는 것: 귤, 향수, 책, 가족, 친구, 고양이, 앙드레 케르테츠, 하늘색</li><br>
+      <짧은 소개><br>
+      안녕하세요. 저는 한국에서 태어나 지금까지 쭉 한국에서 살고있는 박듀트입니다.<br>
+      개발공부를 시작한 지 일주일정도 되었습니다.(21XX년 9월 24일 기준)<br>
+      호기롭게 To-do List 만들기 도전했다가 울면서 지웠습니다. 그래도 꾸준히 공부할 계획입니다.
+      <br><br><br><br>
+      <li>Name: Park Dueto</li>
+      <li>Birthday: 19th August 2145 (Leo)</li>
+      <li>Hobby: swimming, reading, writing</li>
+      <li>Shoe size: L-230 R-235</li>
+      <li>Motto: Let's live in a simple way</li>
+      <li>License: TAT Level-2, FAT Level-1, Computer Specialist in Spreadsheet & Database Level-2, Driver's License</li>
+      <li>Favorite things: Tangerine, Perfume, Reading a book, Friends, Family, Cat, Andre Kertez, Skyblue</li>
+      <br>
+      hello. I am Park Duete who was born in South Korea and has been living in South Korea.<br>
+      It's been about a week since I started studying for programming (as of 24th September, 21XX).<br>
+      I pompously tried to make a To-Do List, and then I deleted it with tears. But, I plan to study steadily.
+    </ul>
+  </body>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</html>

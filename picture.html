@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dueto Park's Homepage-picture</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+    <div id="hope"></div>
+    <a href="main.html" class="settingTitle">
+    <h1>Dueto Park</h1></a>
+
+    <p style="font-size:50px; font-weight:bold;">
+      <a href="profile.html" class="settingMenu">Profile</a>
+      |
+      <a href="picture.html" class="settingMenu">Picture</a>
+    </p>
+
+
+
+
+  </body>
+  <script>
+  document.write("<table>");
+  var j = 0;
+  var num=1;
+    while(j<9){
+      document.write("<tr>");
+      var i = 0;
+      while(i<6){
+        document.write("<td><img src='"+num+".jpg' width='300px'></td>");
+        i=i+1;
+        num=num+1;
+      }
+      j=j+1;
+      document.write("</tr>");
+    }
+  document.write("</table>");
+
+  </script>
+
+</html>
