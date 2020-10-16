@@ -4,24 +4,20 @@
     <title>Dueto Park's Homepage-picture</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-
   </head>
+
+
   <body>
     <div id="hope"></div>
-    <a href="main.html" class="settingTitle">
-    <h1>Dueto Park</h1></a>
+    <h1><a href="main.html" class="settingTitle">Dueto Park</a></h1>
 
-    <p style="font-size:50px; font-weight:bold;">
-      <a href="profile.html" class="settingMenu">Profile</a>
-      |
-      <a href="picture.html" class="settingMenu">Picture</a>
-    </p>
-
-
-
-
+    <ul class="settingMenu">
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="picture.html">Picture</a></li>
+    </ul>
   </body>
+
+
   <script>
   document.write("<table>");
   var j = 0;
@@ -30,7 +26,7 @@
       document.write("<tr>");
       var i = 0;
       while(i<6){
-        document.write("<td><img src='"+num+".jpg' width='300px'></td>");
+        document.write("<td><img src='./pictures/"+num+".jpg' width='300px'></td>");
         i=i+1;
         num=num+1;
       }

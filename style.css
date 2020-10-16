@@ -2,32 +2,49 @@ html,body {
   padding:0px;
   margin:0px;
 }
+
+/*===================================top======================================*/
 .settingTitle {
-  font-size:35px;
+  font-size:60px;
   text-decoration:none;
   color:black;
-  text-shadow: 5px 0px 0px #FF6666;
+  text-shadow: 3px 0px 0px #FF6666;
 }
 
-.settingMenu {
+.settingMenu{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  padding:0px;
+}
+.settingMenu li{
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 6px solid black;
+}
+.settingMenu > li:first-child{
+  padding-left: 0px;
+  border:none;
+  margin-left: 0;
+}
+.settingMenu a {
   font-size:50px;
   font-style:italic;
   color:black;
   text-decoration:none;
   font-weight:bold;
 }
+
 .settingContents{
   color:#454545;
   font-size:17px;
   font-family: "UhBee Seulvely";
-  text-indent: 2em;
+  margin-left: 50px;
 }
 
 
-/*=========================================================*/
 
-
-
+/*==================================main=====================================*/
 .slideshow-container {
   max-width: 800px;
   position: relative;
