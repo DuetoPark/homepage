@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="ko">
   <head>
-    <title>Dueto Park's Homepage-picture</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, 사진, picture">
+    <meta name="description" content="내 멋진 사진들을 가만히 둘 수 없어서 업로드 했다.">
+    <meta name="author" content="dueto park">
+
+    <title>Dueto Park's Homepage | picture</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
-
-
   <body>
     <header>
       <h1>
-        <a href="01-main.html" class="settingTitle">
+        <a href="./01-main.html" class="settingTitle">
           Dueto Park
         </a>
       </h1>
@@ -19,37 +20,18 @@
       <nav>
         <h2 class="sr-only">menu</h2>
         <ul class="settingMenu">
-          <li><a href="02-profile.html">Profile</a></li>
+          <li><a href="./02-profile.html">Profile</a></li>
           <li>
             <strong  class="sr-only">Current page</strong>
-            <a href="03-picture.html">Picture</a></li>
+            <a href="./03-picture.html">Picture</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <h1 class="sr-only">My pictures</h1>
     </main>
+
+    <script src="../assets/app/make-image.js"></script>
   </body>
-
-
-  <script>
-  document.write("<table>");
-  var j = 0;
-  var num=1;
-    while(j<9){
-      document.write("<tr>");
-      var i = 0;
-      while(i<6){
-        document.write("<td><img src='./pictures/"+num+".jpg' width='300px'></td>");
-        i=i+1;
-        num=num+1;
-      }
-      j=j+1;
-      document.write("</tr>");
-    }
-  document.write("</table>");
-
-  </script>
-
 </html>

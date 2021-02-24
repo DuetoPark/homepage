@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Dueto Park's Homepage-profile</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, 프로필, 소개, profile">
+    <meta name="description" content="페이지의 주인을 하나하나 소개한다. 이름, 생일, 취미 등등 소소한 것들을 담아냈다.">
+    <meta name="author" content="dueto park">
 
+    <title>Dueto Park's Homepage | profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
     <header>
       <h1>
-        <a href="01-main.html" class="settingTitle">
+        <a href="./01-main.html" class="settingTitle">
           Dueto Park
         </a>
       </h1>
@@ -20,8 +23,8 @@
         <ul class="settingMenu">
           <li>
             <strong  class="sr-only">Current page</strong>
-            <a href="02-profile.html">Profile</a></li>
-          <li><a href="03-picture.html">Picture</a></li>
+            <a href="./02-profile.html">Profile</a></li>
+          <li><a href="./03-picture.html">Picture</a></li>
         </ul>
       </nav>
     </header>
@@ -37,13 +40,13 @@
           <div class="numbertext">
             <strong aria-label="First image">1 / 2</strong>
           </div>
-          <img src="./pictures/44.jpg" alt="Dueto Park">
+          <img src="../assets/images/44.jpg" alt="Dueto Park">
         </div>
         <div class="mySlides">
           <div class="numbertext">
             <span aria-label="Last image">2 / 2</span>
           </div>
-          <img src="./pictures/45.jpg" alt="Dueto Park looks like mcdonald">
+          <img src="../assets/images/45.jpg" alt="Dueto Park looks like mcdonald">
         </div>
 
 
@@ -111,42 +114,7 @@
           </p>
         </div>
       </article>
-
-
-
-
     </main>
+    <script src="../assets/app/slider.js"></script>
   </body>
-
-
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
 </html>
